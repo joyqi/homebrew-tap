@@ -11,7 +11,7 @@ class Chatchain < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/joyqi/chatchain/releases/download/v2.1.0/chatchain_2.1.0_darwin_amd64.tar.gz"
-      sha256 "20991a25de50a8e2733bf9493996bcded62e02b077aa30c71f619126219fe33d"
+      sha256 "5d692a563514330fd7ff6a1dddde72c97c0137c11c141f29ac1205f6775b870e"
 
       define_method(:install) do
         bin.install "chatchain"
@@ -19,7 +19,7 @@ class Chatchain < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/joyqi/chatchain/releases/download/v2.1.0/chatchain_2.1.0_darwin_arm64.tar.gz"
-      sha256 "d5f5b44393d0bbd7ebd15cbf83f83b9d7720261d59eb1f6388d83cb34fa56137"
+      sha256 "5735e61dd88add3c0f11ed3be8f14cb3d7a1e8eb76203b0a3ed01b02f01b7539"
 
       define_method(:install) do
         bin.install "chatchain"
@@ -30,14 +30,14 @@ class Chatchain < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/joyqi/chatchain/releases/download/v2.1.0/chatchain_2.1.0_linux_amd64.tar.gz"
-      sha256 "f8326e17ff0d6ba27c334d2cd9291eb28abb2b53b71d956ccfe6b042951c14c6"
+      sha256 "a90caf3e5f34407548dd26b32461288722a985b26b0499959596a2e141905a66"
       define_method(:install) do
         bin.install "chatchain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/joyqi/chatchain/releases/download/v2.1.0/chatchain_2.1.0_linux_arm64.tar.gz"
-      sha256 "5fe84e91bdaecfe52f65c5fabd8e455b43146da57a38ae85e8646a07c12c771d"
+      sha256 "5968cb4c163d54b42322af60eba261eb3729fc80cca18e47bd11497c8de7c813"
       define_method(:install) do
         bin.install "chatchain"
       end
