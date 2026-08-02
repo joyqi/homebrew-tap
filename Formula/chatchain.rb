@@ -5,21 +5,21 @@
 class Chatchain < Formula
   desc "A lightweight cross-platform AI chat CLI"
   homepage "https://github.com/joyqi/chatchain"
-  version "2.9.0"
+  version "2.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joyqi/chatchain/releases/download/v2.9.0/chatchain_2.9.0_darwin_amd64.tar.gz"
-      sha256 "348da50420e595c340e21b3b49d0c6bc714fdb27414f871b6b9819dbd429f990"
+      url "https://github.com/joyqi/chatchain/releases/download/v2.9.1/chatchain_2.9.1_darwin_amd64.tar.gz"
+      sha256 "569a8ddfa543d717af62cbdf14981550da090f27a3a108fdb88eab58b0569f12"
 
       define_method(:install) do
         bin.install "chatchain"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joyqi/chatchain/releases/download/v2.9.0/chatchain_2.9.0_darwin_arm64.tar.gz"
-      sha256 "2249ec748f298de6abbad324bdb8c968ac0725cf51b9f000176a500ac8e54210"
+      url "https://github.com/joyqi/chatchain/releases/download/v2.9.1/chatchain_2.9.1_darwin_arm64.tar.gz"
+      sha256 "a2796d6b09fdb7a52be09741f0154642c81a6c4da96f43d31853b927893e2e2f"
 
       define_method(:install) do
         bin.install "chatchain"
@@ -29,15 +29,15 @@ class Chatchain < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joyqi/chatchain/releases/download/v2.9.0/chatchain_2.9.0_linux_amd64.tar.gz"
-      sha256 "9888a63882d699d6664c6b5c35d9d952841273ddbf75561567bd0389ba42a2c6"
+      url "https://github.com/joyqi/chatchain/releases/download/v2.9.1/chatchain_2.9.1_linux_amd64.tar.gz"
+      sha256 "c1b3e2ffc8d9d958cdbfb01e8babae2d9eb669ae81a503cd6b1479d508ba3af0"
       define_method(:install) do
         bin.install "chatchain"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joyqi/chatchain/releases/download/v2.9.0/chatchain_2.9.0_linux_arm64.tar.gz"
-      sha256 "4bc98223f23a9bc073ad788fff8cbdd5de99eaa580191169e56abbdc329044ca"
+      url "https://github.com/joyqi/chatchain/releases/download/v2.9.1/chatchain_2.9.1_linux_arm64.tar.gz"
+      sha256 "c90ddafaced8b82567947c0cb82634db93a1e95dff5d77c6c77149e7f785139a"
       define_method(:install) do
         bin.install "chatchain"
       end
