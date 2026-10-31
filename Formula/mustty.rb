@@ -1,28 +1,28 @@
 class Mustty < Formula
   desc "Distraction-free Markdown writer for the terminal"
   homepage "https://github.com/joyqi/mustty"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joyqi/mustty/releases/download/v0.1.2/mustty-aarch64-apple-darwin.tar.gz"
-      sha256 "624fef54401c2a87fd1d23cd20dee251ea1194267f17155fe0e0002f053c680c"
+      url "https://github.com/joyqi/mustty/releases/download/v0.1.3/mustty-aarch64-apple-darwin.tar.gz"
+      sha256 "b21cfd9c54659ca39c8af95e4ccff4e64cfb421a14172e5870f3734108c339b5"
     end
     on_intel do
-      url "https://github.com/joyqi/mustty/releases/download/v0.1.2/mustty-x86_64-apple-darwin.tar.gz"
-      sha256 "5c22e84039ea71d5442ffa69940c6a6adc43d932fce18b815ccfe5d04be7fbef"
+      url "https://github.com/joyqi/mustty/releases/download/v0.1.3/mustty-x86_64-apple-darwin.tar.gz"
+      sha256 "0be3534306fb3b40b66ba005d0913a1666885c9777d5fc354464c17f85e6a2b6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joyqi/mustty/releases/download/v0.1.2/mustty-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "209e96e72da2acc48d0f34215584de35e3e62f778b52b21aab0c44104f916b87"
+      url "https://github.com/joyqi/mustty/releases/download/v0.1.3/mustty-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e7b8b512b7225b1b29f54ab79dd9a6a836902dbead47821d9e2bbacb9b787ca0"
     end
     on_intel do
-      url "https://github.com/joyqi/mustty/releases/download/v0.1.2/mustty-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "da31e00f5d1627fcf91c9d07a69e6e18314f7de653c696d5200e673a7f2a98ac"
+      url "https://github.com/joyqi/mustty/releases/download/v0.1.3/mustty-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "c9f1124fab8e2291f6ad32c92cc509bffca894bdb5e17b3c87929fcc17db04a4"
     end
   end
 
